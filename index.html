@@ -11,33 +11,33 @@
     <h1>Text Encrypter</h1>
 
     <!-- Section ingresae mensaje-->
-    <main class="main">
-      <section>
-        <input
-          class="input-text"
-          type="text"
-          name="input-texto"
-          id="input-texto"
-          placeholder="Ingresa el texto aqui"
-        />
-        <button class="button" id="btn-encriptar" value="Encriptar">
-          Encriptar
-        </button>
-        <button class="button" id="btn-desencriptar" value="Desencriptar">
-          Desencriptar
-        </button>
-      </section>
-    </main>
+
+    <section class="main">
+      <input
+        class="input-text"
+        type="text"
+        name="input-texto"
+        id="input-texto"
+        placeholder="Ingresa el texto aqui"
+      />
+      <button class="button" id="btn-encriptar" value="Encriptar">
+        Encriptar
+      </button>
+      <button class="button" id="btn-desencriptar" value="Desencriptar">
+        Desencriptar
+      </button>
+    </section>
 
     <!-- Seccion de mensaje encriptado/desencriptado -->
+
     <section class="msg-box">
       <h2>Tu mensaje encriptado:</h2>
       <input class="text-salida" type="text" id="msg" />
-      <button onclick="copiarTexto()">Copiar</button>
+      <button class="button" onclick="copiarTexto()">Copiar</button>
     </section>
 
     <!-- Section footer-->
-    <div>
+    <div class="footer">
       <footer>Enrique Gutierres - 2022</footer>
     </div>
 
