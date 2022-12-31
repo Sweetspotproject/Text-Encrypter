@@ -31,7 +31,7 @@ var boton1 = document.querySelector("#btn-desencriptar");
 boton1.onclick = desencriptar;
 
 // Funcion de copiar
-function copiarTexto(){
+function copiarTexto() {
   var copyText = document.getElementById("msg");
   copyText.Select;
   //copyText.setSelectionRange(0, 99999);
