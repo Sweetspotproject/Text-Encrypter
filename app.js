@@ -34,6 +34,5 @@ boton1.onclick = desencriptar;
 function copiarTexto() {
   var copyText = document.getElementById("msg");
   copyText.Select;
-  //copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
 }
