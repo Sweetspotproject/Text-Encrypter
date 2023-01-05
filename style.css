@@ -4,4 +4,26 @@
 }
 body {
   background-image: url("assets/cool-background(2).png");
+  color: chartreuse;
+}
+
+.main{
+  background-color: #223b24;
+  background-image: url("assets/bezel.png");
+  width: 669px;
+  height: 420px;
+  margin: auto;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(95, 175, 15);
+
+}
+.input-text{
+  color: chartreuse;
+  background-color: #223b24;
+  border: none;
+  margin: 250px 200px 200px 150px;
+}
+::placeholder{
+  color: chartreuse;
 }
