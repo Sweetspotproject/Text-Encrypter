@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Encrypter</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Encrypter</title>
+</head>
+
+<body>
+  <div class="Title">
     <h1>Text Encrypter</h1>
+  </div>
 
-    <!-- Section ingresae mensaje-->
-    <div src="url("assets/bezel.png")">
-      <section class="main">
-        <input
-          class="input-text"
-          type="text"
-          name="input-texto"
-          id="input-texto"
-          placeholder="Ingresa el texto aqui"
-        />
-        <button class="button" id="btn-encriptar" value="Encriptar">
-          Encriptar
-        </button>
-        <button class="button" id="btn-desencriptar" value="Desencriptar">
-          Desencriptar
-        </button>
-      </section>
-    </div>
-    <!-- Seccion de mensaje encriptado/desencriptado -->
-
-    <section class="msg-box">
-      <h2>Tu mensaje encriptado:</h2>
-      <input class="text-salida" type="text" id="msg" />
-      <button class="button-box" onclick="copiarTexto()">Copiar</button>
+  <!-- Section ingresae mensaje-->
+  <div>
+    <section class="main">
+      <input class="input-text" type="text" name="input-texto" id="input-texto" placeholder="Ingresa el texto aqui" />
+      <button class="button-49" id="btn-encriptar" value="Encriptar">
+        Encriptar
+      </button>
+      <button class="button-49" id="btn-desencriptar" value="Desencriptar">
+        Desencriptar
+      </button>
     </section>
+  </div>
+  <!-- Seccion de mensaje encriptado/desencriptado -->
 
-    <!-- Section footer-->
-    <div class="footer">
-      <footer>Enrique Gutierres - 2022</footer>
-    </div>
+  <section class="msg-box">
+    <h2>Tu mensaje encriptado:</h2>
+    <input class="text-salida" type="text" id="msg" />
+    <button class="button-box" onclick="copiarTexto()">Copiar</button>
+  </section>
 
-    <script src="app.js"></script>
-  </body>
+  <!-- Section footer-->
+  <div class="footer">
+    <footer>Enrique Gutierres - 2022</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
