@@ -1,134 +1,183 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
   background-image: url(assets/shoaib-khan-hud-interface-sat-1-0-00-04-05.jpg);
-  font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-}
-.Title {
-  margin: auto;
-  color: crimson;
-  text-indent: 100px;
 }
 
 .main {
-  backdrop-filter: blur(10px);
-  width: 669px;
-  height: 420px;
-  margin: auto;
-  border-style: solid;
-  border-color: crimson;
-  border-width: 3px;
-  box-shadow: rgba(255, 0, 0, 0.658) 0px 2px 4px 0px,
-    rgba(255, 0, 0, 0.637) 0px 2px 16px 0px;
-}
-.input-text {
-  background: none;
-  border: none;
-  color: rgb(255, 0, 0);
-  
+  position: relative;
+  margin: 100px 600px;
   width: 600px;
-  height: 150px;
-  margin: 250px 250px 200px 100px;
+  height: 200px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: crimson;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(220, 20, 60, 0.747) 0px 19px 38px,
+    rgba(220, 20, 60, 0.726) 0px 15px 12px;
 }
-::placeholder {
+
+.input-text {
   font-size: 20px;
-  color: rgb(255, 0, 0);
-  
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 100px;
+  background: none;
+  width: 600px;
+  height: 100px;
+  border: none;
+  outline: none;
+  color: crimson;
 }
 
 /* Button */
+
 .button-49,
 .button-49:after {
+  display: inline;
+
+  margin: 15px 45px;
+
   width: 150px;
+
   height: 76px;
-  margin-left: 90px;
+
   line-height: 78px;
+
   font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+
+  font-family: "Bebas Neue", sans-serif;
+
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+
   border: 0;
-  color: #fff;
+
+  color: rgb(0, 0, 0);
+
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00E6F6;
+
+  box-shadow: 6px 0px 0px #00e6f6;
+
   outline: transparent;
+
   position: relative;
+
   user-select: none;
+
   -webkit-user-select: none;
+
   touch-action: manipulation;
 }
 
 .button-49:after {
   --slice-0: inset(50% 50% 50% 50%);
+
   --slice-1: inset(80% -6px 0 0);
+
   --slice-2: inset(50% -6px 30% 0);
+
   --slice-3: inset(10% -6px 85% 0);
+
   --slice-4: inset(40% -6px 43% 0);
+
   --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'ALTERNATE TEXT';
+
+  content: "ALTERNATE TEXT";
+
   display: block;
+
   position: absolute;
+
   margin: auto;
+
   top: 0;
+
   left: 0;
+
   right: 0;
+
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+
   clip-path: var(--slice-0);
 }
 
 .button-49:hover:after {
   animation: 1s glitch;
+
   animation-timing-function: steps(2, end);
 }
 
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
+
     transform: translate(-20px, -10px);
   }
+
   10% {
     clip-path: var(--slice-3);
+
     transform: translate(10px, 10px);
   }
+
   20% {
     clip-path: var(--slice-1);
+
     transform: translate(-10px, 10px);
   }
+
   30% {
     clip-path: var(--slice-3);
+
     transform: translate(0px, 5px);
   }
+
   40% {
     clip-path: var(--slice-2);
+
     transform: translate(-5px, 0px);
   }
+
   50% {
     clip-path: var(--slice-3);
+
     transform: translate(5px, 0px);
   }
+
   60% {
     clip-path: var(--slice-4);
+
     transform: translate(5px, 10px);
   }
+
   70% {
     clip-path: var(--slice-2);
+
     transform: translate(-10px, 10px);
   }
+
   80% {
     clip-path: var(--slice-5);
+
     transform: translate(20px, -10px);
   }
+
   90% {
     clip-path: var(--slice-1);
+
     transform: translate(-10px, 0px);
   }
+
   100% {
     clip-path: var(--slice-1);
+
     transform: translate(0);
   }
 }
@@ -137,125 +186,191 @@ body {
   .button-49,
   .button-49:after {
     width: 200px;
+
     height: 86px;
+
     line-height: 88px;
   }
 }
 
-/* Seccion de mensaje de encriptado */
-.msg-box{
-  margin: auto;
-  color: crimson;
+/*Seccion de mensaje encriptado/desencriptado*/
 
-}
-
-.text-salida{
-  backdrop-filter: blur(10px);
-  background: none;
-  border: none;
-  color: rgb(255, 0, 0);
-  font-size: 20px;
+.msg-box {
+  position: relative;
+  margin: 160px 600px;
   width: 600px;
-  height: 150px;
-  margin: 250px 250px 200px 100px;
-   margin: auto;
+  height: 200px;
   border-style: solid;
+  border-width: 2px;
   border-color: crimson;
-  border-width: 3px;
-  box-shadow: rgba(255, 0, 0, 0.658) 0px 2px 4px 0px,
-    rgba(255, 0, 0, 0.637) 0px 2px 16px 0px;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(220, 20, 60, 0.76) 0px 19px 38px,
+    rgba(220, 20, 60, 0.726) 0px 15px 12px;
 }
 
-/* Button */
+.text-salida {
+  font-size: 20px;
+
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 100px;
+  background: none;
+  width: 600px;
+  height: 100px;
+  border: none;
+  outline: none;
+  color: crimson;
+}
+
+/* Boron copiar*/
 .button-box,
 .button-box:after {
+  display: inline;
+
+  margin: 15px 205px;
+
   width: 150px;
+
   height: 76px;
-  margin-left: 90px;
+
   line-height: 78px;
+
   font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+
+  font-family: "Bebas Neue", sans-serif;
+
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+
   border: 0;
-  color: #fff;
+
+  color: rgb(0, 0, 0);
+
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00E6F6;
+
+  box-shadow: 6px 0px 0px #00e6f6;
+
   outline: transparent;
+
   position: relative;
+
   user-select: none;
+
   -webkit-user-select: none;
+
   touch-action: manipulation;
 }
 
 .button-box:after {
   --slice-0: inset(50% 50% 50% 50%);
+
   --slice-1: inset(80% -6px 0 0);
+
   --slice-2: inset(50% -6px 30% 0);
+
   --slice-3: inset(10% -6px 85% 0);
+
   --slice-4: inset(40% -6px 43% 0);
+
   --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'ALTERNATE TEXT';
+
+  content: "ALTERNATE TEXT";
+
   display: block;
+
   position: absolute;
+
   margin: auto;
+
   top: 0;
+
   left: 0;
+
   right: 0;
+
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+
   clip-path: var(--slice-0);
 }
 
 .button-box:hover:after {
   animation: 1s glitch;
+
   animation-timing-function: steps(2, end);
 }
 
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
+
     transform: translate(-20px, -10px);
   }
+
   10% {
     clip-path: var(--slice-3);
+
     transform: translate(10px, 10px);
   }
+
   20% {
     clip-path: var(--slice-1);
+
     transform: translate(-10px, 10px);
   }
+
   30% {
     clip-path: var(--slice-3);
+
     transform: translate(0px, 5px);
   }
+
   40% {
     clip-path: var(--slice-2);
+
     transform: translate(-5px, 0px);
   }
+
   50% {
     clip-path: var(--slice-3);
+
     transform: translate(5px, 0px);
   }
+
   60% {
     clip-path: var(--slice-4);
+
     transform: translate(5px, 10px);
   }
+
   70% {
     clip-path: var(--slice-2);
+
     transform: translate(-10px, 10px);
   }
+
   80% {
     clip-path: var(--slice-5);
+
     transform: translate(20px, -10px);
   }
+
   90% {
     clip-path: var(--slice-1);
+
     transform: translate(-10px, 0px);
   }
+
   100% {
     clip-path: var(--slice-1);
+
     transform: translate(0);
   }
 }
@@ -264,7 +379,9 @@ body {
   .button-49,
   .button-49:after {
     width: 200px;
+
     height: 86px;
+
     line-height: 88px;
   }
 }
