@@ -1,18 +1,28 @@
 body {
-  background-image: url(assets/shoaib-khan-hud-interface-sat-1-0-00-04-05.jpg);
+  background-image: url(assets/hud.jpg);
+  background-size: cover;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.glitch {
+  color: rgb(17, 236, 252);
+  text-align: center;
+  margin: 1rem;
+  font-size: 30px;
 }
 
 .main {
   position: relative;
-  margin: 100px 600px;
+  margin: 100px auto;
   width: 600px;
   height: 200px;
   border-style: solid;
   border-width: 2px;
-  border-color: crimson;
-  backdrop-filter: blur(10px);
-  box-shadow: rgba(220, 20, 60, 0.747) 0px 19px 38px,
-    rgba(220, 20, 60, 0.726) 0px 15px 12px;
+  border-color: rgb(17, 236, 252);
+  backdrop-filter: blur(15px);
+  box-shadow: rgba(17, 236, 252, 0.747) 0px 19px 38px,
+    rgba(17, 236, 252, 0.726) 0px 15px 12px;
 }
 
 .input-text {
@@ -24,7 +34,7 @@ body {
   height: 100px;
   border: none;
   outline: none;
-  color: crimson;
+  color: rgb(17, 236, 252);
 }
 
 /* Button */
@@ -33,9 +43,9 @@ body {
 .button-49:after {
   display: inline;
 
-  margin: 15px 45px;
+  margin: 50px 3rem;
 
-  width: 150px;
+  width: 180px;
 
   height: 76px;
 
@@ -45,7 +55,7 @@ body {
 
   font-family: "Bebas Neue", sans-serif;
 
-  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  background: linear-gradient(45deg, transparent 5%, rgb(17, 236, 252) 5%);
 
   border: 0;
 
@@ -197,15 +207,15 @@ body {
 
 .msg-box {
   position: relative;
-  margin: 160px 600px;
+  margin: 180px auto;
   width: 600px;
   height: 200px;
   border-style: solid;
   border-width: 2px;
-  border-color: crimson;
-  backdrop-filter: blur(10px);
-  box-shadow: rgba(220, 20, 60, 0.76) 0px 19px 38px,
-    rgba(220, 20, 60, 0.726) 0px 15px 12px;
+  border-color: rgb(17, 236, 252);
+  backdrop-filter: blur(15px);
+  box-shadow: rgba(17, 236, 252, 0.76) 0px 19px 38px,
+    rgba(17, 236, 252, 0.726) 0px 15px 12px;
 }
 
 .text-salida {
@@ -218,17 +228,17 @@ body {
   height: 100px;
   border: none;
   outline: none;
-  color: crimson;
+  color: rgb(17, 236, 252);
 }
 
-/* Boron copiar*/
+/* Boton copiar*/
 .button-box,
 .button-box:after {
   display: inline;
 
-  margin: 15px 205px;
+  margin: 50px auto;
 
-  width: 150px;
+  width: 600px;
 
   height: 76px;
 
@@ -238,7 +248,7 @@ body {
 
   font-family: "Bebas Neue", sans-serif;
 
-  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  background: linear-gradient(45deg, transparent 5%, rgb(17, 236, 252) 5%);
 
   border: 0;
 
@@ -375,13 +385,50 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 720px) {
   .button-49,
   .button-49:after {
     width: 200px;
 
     height: 86px;
+    
+    margin: 50px 100px;
+    
+    line-height: 88px;
+    
+    align-content: center;
+  }
+  .text-enter{
+    width: 400px;
+  }
+  .input-text{
+    width: 400px;
+  }
+  .main{
+    width: 400px;
+  }
+  .msg-box{
+    width: 400px;
+    
+    margin: 600px auto;
+  }
+  .button-box{
+    width: 300px;
+
+    margin: 40px;
+    
+    height: 86px;
 
     line-height: 88px;
+    
+    align-content: center;
+  }
+  body{
+  background-image: url(assets/hud.jpg);
+  background-size: cover;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Montserrat", sans-serif;
   }
 }
+
+

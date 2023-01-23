@@ -7,16 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
   <title>Encrypter</title>
 </head>
 
 <body>
   <header class="glitch" data-text="T E X T  E N C R Y P T E R">
-    <h1>T E X T E N C R Y P T E R</h1>
+    <h1>T E X T - E N C R Y P T E R</h1>
   </header>
 
   <!-- Section ingresae mensaje-->
-  <div class="main">
+  <section class="main">
     <div class="text-enter">
       <input class="input-text" type="text" name="input-texto" id="input-texto" placeholder="Ingresa el texto aqui" />
       <button class="button-49" id="btn-encriptar" value="Encriptar">
@@ -26,19 +30,19 @@
         DESENCRIPTAR
       </button>
     </div>
-  </div>
+  </section>
 
   <!-- Seccion de mensaje encriptado/desencriptado -->
 
-  <div class="msg-box">
-    <input class="text-salida" type="text" id="msg" placeholder="Tu texto aparecera aqui."/>
+  <section class="msg-box">
+    <input class="text-salida" type="text" id="msg" placeholder="Tu texto aparecera aqui." />
     <button class="button-box" onclick="copiarTexto()">COPIAR</button>
-  </div>
+  </section>
 
   <!-- Section footer-->
-  <div class="footer">
+  <section class="footer">
     <footer>Enrique Gutierres - 2022</footer>
-  </div>
+  </section>
 
   <script src="app.js"></script>
 </body>
